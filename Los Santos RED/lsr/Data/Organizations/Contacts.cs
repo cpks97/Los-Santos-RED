@@ -17,6 +17,7 @@ public class Contacts : IContacts
     private TaxiServiceContact rydeMeContact;
     private TaxiServiceContact schlechtContact;
     private CorruptCopContact corruptCopContact;
+    private ContractorContact contractorContact;
     private GunDealerContact gunDealerContact;
 
     public PossibleContacts PossibleContacts { get; private set; }
@@ -72,6 +73,7 @@ public class Contacts : IContacts
         downtownCabContact = new TaxiServiceContact(StaticStrings.DowntownCabCoContactName, "CHAR_TAXI") { FullNumber = "3235555555", Number = "5555555", IsDefault = true };
         gunDealerContact = new GunDealerContact(StaticStrings.UndergroundGunsContactName);
         corruptCopContact = new CorruptCopContact(StaticStrings.OfficerFriendlyContactName);
+        contractorContact = new ContractorContact(StaticStrings.ContractorContactName);
         vehicleExporterContact = new VehicleExporterContact(StaticStrings.VehicleExporterContactName);
 
 

@@ -213,9 +213,13 @@
     <Compile Include="lsr\Player\ActiveTasks\Gang\RivalGangAmbushTask.cs" />
     <Compile Include="lsr\Player\ActiveTasks\Gang\GangBriberyTask.cs" />
     <Compile Include="lsr\Player\ActiveTasks\Generic Contact\PayoffContactTask.cs" />
+    <Compile Include="lsr\Player\ActiveTasks\Contractor\HitmanTask.cs" />
+    <Compile Include="lsr\Player\ActiveTasks\Contractor\ContractorTasks.cs" />
     <Compile Include="lsr\Player\Activity\HideableObject.cs" />
     <Compile Include="lsr\Player\Activity\HidingActivity.cs" />
     <Compile Include="lsr\Player\Activity\Items\IngestActivityNew.cs" />
+    <Compile Include="lsr\Player\Cellphone\Contacts\ContractorContact.cs" />
+    <Compile Include="lsr\Player\Cellphone\Interactions\ContractorInteraction.cs" />
     <Compile Include="lsr\Player\Crafting\Craft.cs" />
     <Compile Include="lsr\Player\Gambling\Blackjack Games\BlackJackGame.cs" />
     <Compile Include="lsr\Player\Gambling\Blackjack Games\BlackjackGameUI.cs" />
@@ -538,6 +542,7 @@
     <Compile Include="lsr\Player\Racing\VehicleRaceCheckpoint.cs" />
     <Compile Include="lsr\Player\Racing\VehicleRacer.cs" />
     <Compile Include="lsr\Player\Racing\VehicleRaceStartingPosition.cs" />
+    <Compile Include="lsr\Player\Relationships\ContractorRelationships.cs" />
     <Compile Include="lsr\Player\Respawning\BribeActivity.cs" />
     <Compile Include="lsr\Player\Respawning\PedGeneralInteract.cs" />
     <Compile Include="lsr\Player\Respawning\PedPlayerInteract.cs" />

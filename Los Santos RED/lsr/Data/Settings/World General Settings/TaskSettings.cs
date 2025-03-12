@@ -43,7 +43,12 @@ public class TaskSettings : ISettingsDefaultable
     public float OfficerFriendlyWitnessEliminationComplicationsPercentage { get; set; }
 
 
-
+    [Description("Minimum payment amount for the Witness Elimination task from Officer Friendly")]
+    public int ContractorHitmanTaskPaymentMin { get; set; }
+    [Description("Maximum payment amount for the Witness Elimination task from Officer Friendly")]
+    public int ContractorHitmanTaskPaymentMax { get; set; }
+    [Description("Complications Percent for the Witness Elimination task from Officer Friendly")]
+    public float ContractorHitmanTaskComplicationsPercentage { get; set; }
 
 
 

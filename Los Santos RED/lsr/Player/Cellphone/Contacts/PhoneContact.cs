@@ -9,6 +9,7 @@ using System.Xml.Serialization;
 [XmlInclude(typeof(GunDealerContact))]
 [XmlInclude(typeof(EmergencyServicesContact))]
 [XmlInclude(typeof(CorruptCopContact))]
+[XmlInclude(typeof(ContractorContact))]
 [XmlInclude(typeof(KillerContact))]
 [XmlInclude(typeof(VehicleExporterContact))]
 [XmlInclude(typeof(TaxiServiceContact))]

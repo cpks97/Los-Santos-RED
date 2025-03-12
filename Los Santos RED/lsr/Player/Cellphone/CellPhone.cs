@@ -45,6 +45,7 @@ public class CellPhone
     private GangInteraction GangInteraction;
     private IContactInteractable ContactInteractable;
     private CorruptCopInteraction CorruptCopInteraction;
+    private ContractorInteraction ContractorInteraction;
     private EmergencyServicesInteraction EmergencyServicesInteraction;
     private bool isRunningForcedMobileTask;
 
@@ -589,6 +590,14 @@ public class CellPhone
             NativeFunction.Natives.TERMINATE_ALL_SCRIPTS_WITH_THIS_NAME("cellphone_controller");
         }
     }
+    public PhoneContact GetContractorContact()
+    {
+        if (Contacts.PossibleContacts.ContractorContact == null)
+        {
+            return null;
+        }
+        return ContactList.FirstOrDefault(x => Contacts.PossibleContacts.ContractorContact.Name == x.Name);
+    }
     public PhoneContact GetCorruptCopContact()
     {
         if (Contacts.PossibleContacts.CorruptCopContact == null)
@@ -629,6 +638,13 @@ public class CellPhone
         ScheduledContacts.RemoveAll(x => x.ContactName == phoneContact.Name);
     }
 
+    public ContractorContact DefaultContractorContact
+    {
+        get
+        {
+            return Contacts.PossibleContacts.ContractorContact;
+        }
+    }
     public CorruptCopContact DefaultCorruptCopContact
     {
         get

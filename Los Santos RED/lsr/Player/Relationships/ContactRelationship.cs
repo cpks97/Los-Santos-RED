@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using System.Xml.Serialization;
 
 [XmlInclude(typeof(OfficerFriendlyRelationship))]
+[XmlInclude(typeof(ContractorRelationship))]
 [XmlInclude(typeof(GunDealerRelationship))]
 public class ContactRelationship
 {
